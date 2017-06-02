@@ -3,10 +3,8 @@
 "use strict";
 
 // Module dependencies
-import app from './app';
-import debug from 'debug';
-import http from 'http';
-import Merlin from './bots/merlin';
+let app = require('./app');
+let http = require('http');
 
 const port = 3000;
 
@@ -20,9 +18,6 @@ let server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
-
-// Init bots
-let merlin = new Merlin(server);
 
 
 // For "error" event
@@ -51,5 +46,5 @@ function onListening() {
 
     let addr = server.address();
     let bind = typeof port === 'string' ? 'Pipe ' + addr : 'Port ' + addr.port;
-    debug('Listening on ' + bind);
+    console.log('Listening on ' + bind);
 }

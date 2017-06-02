@@ -1,8 +1,8 @@
 "use strict";
 
-import express from 'express';
-import path from 'path';
-import index from './controllers/index';
+let express = require('express');
+let path = require('path');
+let index = require('./controllers/index');
 
 let app = express();
 

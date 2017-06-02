@@ -1,10 +1,10 @@
 module.exports = {
     entry: {
-        'app': './src/main.ts'
+        'app': './src/app/main.ts'
     },
 
     output: {
-        path: __dirname + '/public',
+        path: __dirname + '/src/public',
         filename: 'index.js'
     },
 
@@ -31,10 +31,6 @@ module.exports = {
         ]
     },
 
-    devServer: {
-        historyApiFallback: true,
-        stats: 'minimal'
-    },
 
     // To avoid bundling all of our dependencies,
     // which allows browsers to cache those libraries between builds.
