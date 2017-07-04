@@ -1,2 +1,2 @@
-# bootstrap-react
-React, Redux, TypeScript and Webpack
+# my-bot
+superscript chat bot

@@ -1,4 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 /node_modules/
-/dist/
+/output/
 /.idea/
+/logs/*
+/src/public/index.js
+/src/public/index.js.map
+/src/data.json

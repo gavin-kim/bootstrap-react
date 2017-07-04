@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "outDir": "./src/public",
+    "outDir": "./dist",
     "module": "commonjs",
-    "target": "es5",
+    "target": "es6",
     "sourceMap": true,
     "noImplicitAny": true,
-    "jsx": "react"
+    "jsx": "react",
+    "allowJs": true
   },
-
   "include": [
-    "./src/app/**/*"
+    "./src/**/*"
   ],
-
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "./src/public/index.js"
   ]
 }
