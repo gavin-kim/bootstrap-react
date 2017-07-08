@@ -1,11 +1,10 @@
-import "babel-polyfill";
+import "babel-polyfill"; // must be on the first line in the root file
 import * as React from 'react';
 import { render } from 'react-dom';
 import { createStore } from 'redux';
 import rootReducer from './reducer/index';
 import { Provider } from 'react-redux';
 import ChatApp from './component/ChatApp';
-
 
 const store = createStore(rootReducer);
 
