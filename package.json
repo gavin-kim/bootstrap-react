@@ -26,8 +26,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "parse": "node ./node_modules/superscript/lib/bin/parse -f -o ./src/data.json",
-    "start": "npm run parse && npm run build && node ./src/server.js",
-    "debug": "npm run parse && npm run build && DEBUG=*,-Utils node server.js"
+    "start": "npm run build && node ./src/server.js",
+    "debug": "npm run build && DEBUG=*,-Utils node server.js"
   }
 }
