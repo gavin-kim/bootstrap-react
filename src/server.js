@@ -5,6 +5,7 @@
 // Module dependencies
 let app = require('./app');
 let http = require('http');
+let Merlin = require('./bots/merlin');
 
 const port = 3000;
 
@@ -18,6 +19,9 @@ let server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+
+// Init bots
+let merlin = new Merlin(server);
 
 
 // For "error" event
