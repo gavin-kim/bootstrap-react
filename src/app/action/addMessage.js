@@ -1,4 +1,4 @@
-import {ADD_MESSAGE} from './ActionTypes'
+import {ADD_MESSAGE} from './ActionType'
 
 /**
  * Action Creators

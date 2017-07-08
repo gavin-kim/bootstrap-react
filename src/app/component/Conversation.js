@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
 import {Message} from './Message';
-import {ADD_MESSAGE} from '../actions/ActionTypes';
+import {ADD_MESSAGE} from '../action/ActionTypes';
 
 class Conversation extends React.Component {
 

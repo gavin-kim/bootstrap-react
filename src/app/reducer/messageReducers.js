@@ -1,4 +1,4 @@
-import {ADD_MESSAGE} from '../actions/ActionTypes';
+import {ADD_MESSAGE} from '../action/ActionTypes';
 
 
 export function messages(state = [], action) {

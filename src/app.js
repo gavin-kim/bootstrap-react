@@ -2,7 +2,7 @@
 
 let express = require('express');
 let path = require('path');
-let index = require('./controllers/index');
+let index = require('./router/index');
 
 let app = express();
 

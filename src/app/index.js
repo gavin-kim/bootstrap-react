@@ -2,9 +2,9 @@ import "babel-polyfill";
 import * as React from 'react';
 import { render } from 'react-dom';
 import { createStore } from 'redux';
-import rootReducer from './reducers/index';
+import rootReducer from './reducer/index';
 import { Provider } from 'react-redux';
-import ChatApp from './components/ChatApp';
+import ChatApp from './component/ChatApp';
 
 
 const store = createStore(rootReducer);

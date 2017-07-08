@@ -2,7 +2,7 @@ import * as React from 'react';
 import {connect} from 'react-redux';
 import {InputField} from './InputField';
 import Conversation from './Conversation';
-import {addMessage} from '../actions/addMessage';
+import {addMessage} from '../action/addMessage';
 
 
 class ChatApp extends React.Component {
